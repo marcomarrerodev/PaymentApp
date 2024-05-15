@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MyPaymentApp</string>
+    <string name="skip_button">Skip</string>
+    <string name="finance_App">Finance app the fastest\n and most trusted</string>
+    <string name="your_finance_work">Your finance work starts here. Our here to help you\n track and deal with speeding up your transactions.</string>
+    <string name="get_started">Get Started</string>
 </resources>
