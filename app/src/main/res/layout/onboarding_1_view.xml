@@ -8,20 +8,20 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/skip_button"
         style="@style/skip_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/skip_button"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="@+id/onboarding_1_device"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="1"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6"
-        />
+        app:layout_constraintVertical_bias="0.6"/>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/onboarding_1_device"
         android:layout_width="267dp"
         android:layout_height="519dp"
         android:src="@drawable/onboarding_1_device"
@@ -31,109 +31,107 @@
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.6"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"/>
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/onboarding_1_rectangle"
         android:layout_width="match_parent"
         android:layout_height="355dp"
         android:src="@drawable/onboarding_1_rectangle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"/>
 
     <ImageView
+        android:id="@+id/onboarding_1_element1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/onboarding_1_element1"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintBottom_toBottomOf="@+id/onboarding_1_device"
+        app:layout_constraintEnd_toEndOf="@+id/onboarding_1_device"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/onboarding_1_device"
         app:layout_constraintVertical_bias="0.116"
         app:layout_constraintHorizontal_bias="0.04"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"/>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/onboarding_1_element3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/onboarding_1_element3"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/onboarding_1_device"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.59"
         app:layout_constraintHorizontal_bias="0.01"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"/>
 
     <ImageView
+        android:id="@+id/onboarding_1_element2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/onboarding_1_element2"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintBottom_toBottomOf="@+id/onboarding_1_device"
+        app:layout_constraintEnd_toEndOf="@+id/onboarding_1_device"
+        app:layout_constraintStart_toStartOf="@+id/onboarding_1_device"
+        app:layout_constraintTop_toTopOf="@+id/onboarding_1_device"
         app:layout_constraintVertical_bias="0.455"
         app:layout_constraintHorizontal_bias="1.65"
-        tools:ignore="ContentDescription" />
-
+        tools:ignore="ContentDescription"/>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/onboarding_1_text1"
         style="@style/dark_blue_bold_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/finance_App"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintBottom_toBottomOf="@+id/onboarding_1_device"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.74"
-        />
+        app:layout_constraintTop_toTopOf="@+id/onboarding_1_device"
+        app:layout_constraintVertical_bias="0.74"/>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/onboarding_1_text2"
         style="@style/grey_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/your_finance_work"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintBottom_toBottomOf="@+id/onboarding_1_device"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.86" />
+        app:layout_constraintTop_toTopOf="@+id/onboarding_1_device"
+        app:layout_constraintVertical_bias="0.86"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/big_blue_button"
         style="@style/white_bold_text"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:background="@drawable/blue_button_background"
         android:text="@string/get_started"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintBottom_toBottomOf="@+id/onboarding_1_device"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="1.05"
-        />
+        app:layout_constraintTop_toTopOf="@+id/onboarding_1_device"
+        app:layout_constraintVertical_bias="1.05"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="30dp" />
+        app:layout_constraintGuide_begin="30dp"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="30dp" />
-
+        app:layout_constraintGuide_end="30dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
