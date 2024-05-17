@@ -1,6 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/skip_button"
+        style="@style/skip_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip_button"
+        app:layout_constraintBottom_toTopOf="@+id/onboarding_2_device"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <ImageView
+        android:id="@+id/onboarding_2_device"
+        android:layout_width="267dp"
+        android:layout_height="519dp"
+        android:src="@drawable/onboarding_2_device"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/onboarding_1_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:src="@drawable/onboarding_1_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/onboarding_1_element1"
+        android:layout_width="215dp"
+        android:layout_height="130dp"
+        android:src="@drawable/onboarding_2_element1"
+        app:layout_constraintBottom_toBottomOf="@+id/onboarding_2_device"
+        app:layout_constraintEnd_toEndOf="@+id/onboarding_2_device"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/onboarding_2_device"
+        app:layout_constraintVertical_bias="0.287"
+        tools:ignore="ContentDescription" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/credit_card_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/payment"
+        app:layout_constraintBottom_toBottomOf="@+id/onboarding_1_element1"
+        app:layout_constraintEnd_toEndOf="@+id/onboarding_1_element1"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="@+id/onboarding_1_element1"
+        app:layout_constraintTop_toTopOf="@+id/onboarding_1_element1"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/plus_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus_sing"
+        app:layout_constraintBottom_toBottomOf="@+id/onboarding_1_element1"
+        app:layout_constraintEnd_toEndOf="@+id/onboarding_1_element1"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="@+id/onboarding_1_element1"
+        app:layout_constraintTop_toTopOf="@+id/onboarding_1_element1"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/onboarding_2_element1_1"
+        app:layout_constraintBottom_toBottomOf="@+id/onboarding_1_element1"
+        app:layout_constraintEnd_toEndOf="@+id/onboarding_1_element1"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="@+id/onboarding_1_element1"
+        app:layout_constraintTop_toTopOf="@+id/onboarding_1_element1"
+        app:layout_constraintVertical_bias="0.53"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        style="@style/credit_card_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/credit_card_number"
+        app:layout_constraintBottom_toBottomOf="@+id/onboarding_1_element1"
+        app:layout_constraintEnd_toEndOf="@+id/onboarding_1_element1"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@+id/onboarding_1_element1"
+        app:layout_constraintTop_toTopOf="@+id/onboarding_1_element1"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <ImageView
+        android:id="@+id/onboarding_1_element2"
+        android:layout_width="161dp"
+        android:layout_height="191dp"
+        android:src="@drawable/onboarding_2_element2"
+        app:layout_constraintBottom_toBottomOf="@+id/onboarding_2_device"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/onboarding_2_device"
+        app:layout_constraintTop_toTopOf="@+id/onboarding_2_device"
+        app:layout_constraintVertical_bias="0.59"
+        app:layout_constraintHorizontal_bias="0.84"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:src="@drawable/onboarding_2_profile_picture"
+        app:layout_constraintBottom_toBottomOf="@+id/onboarding_1_element2"
+        app:layout_constraintEnd_toEndOf="@+id/onboarding_1_element2"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@+id/onboarding_1_element2"
+        app:layout_constraintTop_toTopOf="@+id/onboarding_1_element2"
+        app:layout_constraintVertical_bias="0.25"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        style="@style/profile_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_name"
+        app:layout_constraintBottom_toBottomOf="@+id/onboarding_1_element2"
+        app:layout_constraintEnd_toEndOf="@+id/onboarding_1_element2"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="@+id/onboarding_1_element2"
+        app:layout_constraintTop_toTopOf="@+id/onboarding_1_element2"
+        app:layout_constraintVertical_bias="0.60"/>
+
+    <TextView
+        android:id="@+id/onboarding_1_text1"
+        style="@style/dark_blue_bold_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/the_fastest_transaction"
+        app:layout_constraintBottom_toBottomOf="@+id/onboarding_2_device"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/onboarding_2_device"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/onboarding_1_text2"
+        style="@style/grey_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/get_easy"
+        app:layout_constraintBottom_toBottomOf="@+id/onboarding_2_device"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_1_text1"
+        app:layout_constraintVertical_bias="0.25"
+        />
+
+    <Button
+        android:id="@+id/big_blue_button"
+        style="@style/white_bold_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_button_background"
+        android:text="@string/get_started"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="30dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
