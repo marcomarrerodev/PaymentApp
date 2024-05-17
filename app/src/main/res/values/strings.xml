@@ -2,6 +2,13 @@
     <string name="app_name">MyPaymentApp</string>
     <string name="skip_button">Skip</string>
     <string name="finance_App">Finance app the fastest\n and most trusted</string>
-    <string name="your_finance_work">Your finance work starts here. Our here to help you\n track and deal with speeding up your transactions.</string>
+    <string name="your_finance_work">Your finance work starts here. Our here to help you\n
+        track and deal with speeding up your transactions.</string>
     <string name="get_started">Get Started</string>
+    <string name="payment">Payment</string>
+    <string name="plus_sing">+</string>
+    <string name="credit_card_number">***2504</string>
+    <string name="profile_name">Tommy Wilfred\n Jason</string>
+    <string name="the_fastest_transaction">The fastest transaction\n process only here</string>
+    <string name="get_easy">Get easy to pay all your bills with just a few steps.\n Paying your bills become fast and efficient.</string>
 </resources>
